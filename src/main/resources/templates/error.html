@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head> 
+    <title th:text="#{error.title}"></title>
+  </head>
+  <body>
+    <p th:text="#{error.message}"/>
+    <a href="/weather" th:text="#{error.try.again}"></a>
+  </body>
+</html>

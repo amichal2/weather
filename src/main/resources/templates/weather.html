@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head> 
+    <title th:text="#{weather.title}"></title>
+  </head>
+  <body>
+    <form action="#" th:action="@{/weather}" th:object="${city}" method="post">
+      <p th:text="#{weather.select.city}"/>
+      <select th:field="*{id}">
+        <option th:each="cityRepo : ${allCities}"
+          th:value="${cityRepo.id}"
+          th:text="${cityRepo.name}"/>
+      </select>
+      <p><input type="submit" th:attr="value=#{weather.submit}"/></p>
+    </form>
+  </body>
+</html>

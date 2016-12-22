@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head> 
+    <title th:text="#{result.weather.info}"></title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th th:text="#{result.date}"/>
+        <th th:text="${weatherInfo.date}"/>
+      </tr>
+      <tr>
+        <th th:text="#{result.city.name}"/>
+        <th th:text="${weatherInfo.cityName}"/>
+      </tr>
+      <tr>
+        <th th:text="#{result.weather.desc}"/>
+        <th th:text="${weatherInfo.weatherDescription}"/>
+      </tr>
+      <tr>
+        <th th:text="#{result.tempFahrenheit}"/>
+        <th th:text="${weatherInfo.tempFahrenheit}"/>
+      </tr>
+      <tr>
+        <th th:text="#{result.tempCelsius}"/>
+        <th th:text="${weatherInfo.tempCelsius}"/>
+      </tr>
+      <tr>
+        <th th:text="#{result.sunrise}"/>
+        <th th:text="${weatherInfo.sunrise}"/>
+      </tr>
+      <tr>
+        <th th:text="#{result.sunset}"/>
+        <th th:text="${weatherInfo.sunset}"/>
+      </tr>
+    </table>
+    <a href="/weather" th:text="#{result.new.search}"></a>
+  </body>
+</html>
