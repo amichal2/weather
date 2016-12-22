@@ -21,6 +21,7 @@ At current stage adding interfaces for Spring beans does not provide any added v
 
 Potential technical improvements have been marked in the code as TODO tasks.
 
-Potential business improvements include: 
- - add functionality for managing cities i.e. allow user to check weather in any city, display list of all cities with the same name and let user to choose the right one
- - display sunrise and sunset times also in the city's local timezone, rather than only in UTC standard
+Potential business improvements include:
+
+    * add functionality for managing cities i.e. allow user to check weather in any city, display list of all cities with the same name and let user to choose the right one
+    * display sunrise and sunset times also in the city's local timezone, rather than only in UTC standard
